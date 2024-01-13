@@ -1,0 +1,86 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://th.bing.com/th/id/OIG.ThjPZg6Sa90sDdRuDsf0?w=1024&h=1024&rs=1&pid=ImgDetMain);
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#signup-container, #signin-container, #main-container {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#current-time {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#current-date {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #888;
+}
+
+#task-input, #add-task-btn, #tasks-container, #upcoming-tasks, #upcoming-tasks-container {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.task, .upcoming-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-actions, .upcoming-task-actions {
+  display: flex;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #f44336;
+}
+
+#username-input, #password-input, #signin-btn, #error-message, #signup-btn {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#signin-btn, #signup-btn {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#signin-btn:hover, #signup-btn:hover {
+  background-color: #45a049;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
